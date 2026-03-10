@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>START</title>
+    <link rel="stylesheet" href="css/destyle.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Noto+Sans+JP:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+    <link rel="icon" type="image/png" href="icon-192x192.png">
+    <link rel="apple-touch-icon" type="image/png" href="apple-touch-icon-180x180.png">
+    <link rel="icon" href="favicon.ico">
+  </head>
+
+
+  <body>
+
+    <!-- ヘッダー -->
+    <header class="header">
+      <div class="logo">
+        <a href="index.html">
+          <img src="image/logo.svg" alt="ロゴ">
+        </a>
+      </div>
+
+      <nav class="gnav">
+        <ul class="gnav__list">
+          <li class="gnav__item"><a class="gnav__link gnav__link--active" href="index.html">ホーム</a></li>
+          <li class="gnav__item"><a class="gnav__link" href="message.html">メッセージ</a></li>
+          <li class="gnav__item"><a class="gnav__link" href="company.html">会社概要</a></li>
+        </ul>
+      </nav>
+
+      <!-- ハンバーガーメニュー -->
+      <button class="hamburger" type="button" aria-label="メニューを開く" aria-controls="sp-menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="sp-menu" id="sp-menu" aria-hidden="true">
+
+        <button class="sp-menu__close" type="button" aria-label="メニューを閉じる">
+        </button>
+
+        <nav class="sp-menu__nav">
+          <ul class="sp-menu__list">
+            <li class="sp-menu__item"><a class="sp-menu__link" href="index.html">ホーム</a></li>
+            <li class="sp-menu__item"><a class="sp-menu__link" href="message.html">メッセージ</a></li>
+            <li class="sp-menu__item"><a class="sp-menu__link" href="company.html">会社概要</a></li>
+          </ul>
+        </nav>
+
+      </div>
+
+      <div class="sp-menu-overlay" aria-hidden="true"></div>
+
+    </header>
+    <!-- /ヘッダー -->
+
+    <main>
+
+      <!-- メインビジュアル -->
+      <section class="main-visual">
+
+        <picture class="main-visual__img">
+          <source
+          media="(max-width: 768px)"
+          srcset="image/sp_mv.png">
+          <img class="main-visual__img" src="image/pc_bg_mv.png" alt="">
+        </picture>
+
+        <div class="main-visual__copy">
+          <h1 class="main-visual__title">START</h1>
+          <p class="main-visual__subtitle">仕事に最高のスタートを</p>
+        </div>
+      </section>
+      <!-- /メインビジュアル -->
+
+      <!-- ニュース -->
+      <section class="news" id="news">
+        <div class="news__inner">
+          <h2 class="news__title">ニュース</h2>
+
+          <ul class="news__list">
+
+            <li class="news__item">
+              <a class="news__link" href="#">
+                <time class="news__date" datetime="2030-02-10">2030.02.10</time>
+                <p class="news__text">コーポレートサイトをリニューアルしました。</p>
+              </a>
+            </li>
+
+            <li class="news__item">
+              <a class="news__link" href="#">
+                <time class="news__date" datetime="2030-02-08">2030.02.08</time>
+                <p class="news__text">採用を強化中です！一緒に働きませんか？</p>
+              </a>
+            </li>
+
+            <li class="news__item">
+              <a class="news__link" href="#">
+                <time class="news__date" datetime="2030-02-02">2030.02.02</time>
+                <p class="news__text">人材紹介SNS『START』をリリースしました。3/31まで新規登録キャンペーンを開催中です！サービス内で使える500ポイントをプレゼント！</p>
+              </a>
+            </li>
+
+          </ul>
+        </div>
+      </section>
+      <!-- /ニュース -->
+
+      <!-- サービス -->
+      <section class="service" id="service">
+
+        <div class="service__inner">
+
+          <h2 class="service__title">サービス</h2>
+
+          <div class="service__container">
+
+            <article class="service__card">
+              <span class="material-icons-round" aria-hidden="true">work</span>
+              <h3 class="service__card__title">人材紹介業</h3>
+              <p class="service__card__contents">新規サイトの制作はもちろんサイトリニューアルやランディングページの制作も可能です。</p>
+            </article>
+
+            <article class="service__card">
+              <span class="material-icons-round" aria-hidden="true">location_city</span>
+              <h3 class="service__card__title">スクール事業</h3>
+              <p class="service__card__contents">オンラインでWeb政策を学べるスクールを運営しています。</p>
+            </article>
+
+            <article class="service__card">
+              <span class="material-icons-round" aria-hidden="true">desktop_windows</span>
+              <h3 class="service__card__title">Webメディア運営</h3>
+              <p class="service__card__contents">人事系メディアやWebデザイン関連のメディアなどを複数展開しています。</p>
+            </article>
+
+          </div>
+
+        </div>
+
+      </section>
+      <!-- /サービス -->
+
+    </main>
+
+    <!-- フッター -->
+    <footer class="footer" id="footer">
+
+      <div class="footer__inner">
+        <nav class="footer__nav">
+          <ul class="footer__nav__list">
+            <li class="footer__nav__item"><a href="index.html">ホーム</a></li>
+            <li class="footer__nav__item"><a href="message.html">メッセージ</a></li>
+            <li class="footer__nav__item"><a href="company.html">会社概要</a></li>
+          </ul>
+        </nav>
+
+        <div class="footer__copyright">&copy;START</div>
+      </div>
+    </footer>
+    <!-- /フッター -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+
+  </body>
+</html>

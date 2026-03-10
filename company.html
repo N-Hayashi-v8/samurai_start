@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>START</title>
+    <link rel="stylesheet" href="css/destyle.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Noto+Sans+JP:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+    <link rel="apple-touch-icon" type="image/png" href="apple-touch-icon-180x180.png">
+    <link rel="icon" href="favicon.ico">
+
+  </head>
+
+
+  <body>
+
+    <!-- ヘッダー -->
+    <header class="header">
+      <div class="logo">
+        <a href="index.html">
+          <img src="image/logo.svg" alt="ロゴ">
+        </a>
+      </div>
+
+      <nav class="gnav">
+        <ul class="gnav__list">
+          <li class="gnav__item"><a class="gnav__link" href="index.html">ホーム</a></li>
+          <li class="gnav__item"><a class="gnav__link" href="message.html">メッセージ</a></li>
+          <li class="gnav__item"><a class="gnav__link gnav__link--active" href="company.html">会社概要</a></li>
+        </ul>
+      </nav>
+
+      <!-- ハンバーガーメニュー -->
+      <button class="hamburger" type="button" aria-label="メニューを開く" aria-controls="sp-menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="sp-menu" id="sp-menu" aria-hidden="true">
+
+        <button class="sp-menu__close" type="button" aria-label="メニューを閉じる">
+        </button>
+
+        <nav class="sp-menu__nav">
+          <ul class="sp-menu__list">
+            <li class="sp-menu__item"><a class="sp-menu__link" href="index.html">ホーム</a></li>
+            <li class="sp-menu__item"><a class="sp-menu__link" href="message.html">メッセージ</a></li>
+            <li class="sp-menu__item"><a class="sp-menu__link" href="company.html">会社概要</a></li>
+          </ul>
+        </nav>
+
+      </div>
+
+      <div class="sp-menu-overlay" aria-hidden="true"></div>
+
+    </header>
+    <!-- /ヘッダー -->
+
+    <main>
+      <!-- メインビジュアル -->
+      <section class="page-section">
+
+        <picture>
+          <source
+          media="(max-width: 768px)"
+          srcset="image/sp_header.png">
+          <img class="page-section__img" src="image/pc_header.png" alt="">
+        </picture>
+
+        <div class="page-section__copy">
+          <h1 class="page-section__title">会社概要</h1>
+        </div>
+      </section>
+      <!-- /メインビジュアル -->
+
+
+      <!-- 会社概要 -->
+      <section class="company">
+        <div class="company__inner">
+          <ul class="company__list">
+
+            <li class="company__item">
+              <h2 class="company__title">社名</h2>
+              <p class="company__contents">株式会社START</p>
+            </li>
+
+            <li class="company__item">
+              <h2 class="company__title">設立</h2>
+              <p class="company__contents">2025.02.10</p>
+            </li>
+
+            <li class="company__item">
+              <h2 class="company__title">代表取締役</h2>
+              <p class="company__contents">ショーン・デイビット・ジュニア</p>
+            </li>
+
+            <li class="company__item">
+              <h2 class="company__title">資本金</h2>
+              <p class="company__contents">10,000,000円</p>
+            </li>
+
+            <li class="company__item">
+              <h2 class="company__title">所在地</h2>
+              <p class="company__contents">〒555-5555 東京都千代田区 スタートビルディング606</p>
+            </li>
+          </ul>
+
+          <div class="company__map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26253.324535291995!2d135.5153408!3d34.663148!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e0cd5c283afd%3A0xf01d07d5ca11e41!2z5aSn6Ziq5Z-O!5e0!3m2!1sja!2sjp!4v1767077324530!5m2!1sja!2sjp" width="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        
+          <ul class="company-news">
+
+            <li class="company-news__item">
+              <a class="company-news__link" href="#">
+                <time class="company-news__date" datetime="2030-02-10">2030.02.10</time>
+                <p class="company-news__text">コーポレートサイトをリニューアルしました。</p>
+              </a>
+            </li>
+
+            <li class="company-news__item">
+              <a class="company-news__link" href="#">
+                <time class="company-news__date" datetime="2030-02-08">2030.02.08</time>
+                <p class="company-news__text">採用を強化中です！一緒に働きませんか？</p>
+              </a>
+            </li>
+
+            <li class="company-news__item">
+              <a class="company-news__link" href="#">
+                <time class="company-news__date" datetime="2030-02-02">2030.02.02</time>
+                <p class="company-news__text">人材紹介SNS『START』をリリースしました。3/31まで新規登録キャンペーンを開催中です！サービス内で使える500ポイントをプレゼント！</p>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+    </main>
+
+    <!-- フッター -->
+    <footer class="footer" id="footer">
+
+      <div class="footer__inner">
+        <nav class="footer__nav">
+          <ul class="footer__nav__list">
+            <li class="footer__nav__item"><a href="index.html">ホーム</a></li>
+            <li class="footer__nav__item"><a href="message.html">メッセージ</a></li>
+            <li class="footer__nav__item"><a href="company.html">会社概要</a></li>
+          </ul>
+        </nav>
+
+        <div class="footer__copyright">&copy;START</div>
+      </div>
+    </footer>
+    <!-- /フッター -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+
+  </body>

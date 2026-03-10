@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>START</title>
+    <link rel="stylesheet" href="css/destyle.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Noto+Sans+JP:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+    <link rel="icon" type="image/png" href="icon-192x192.png">
+    <link rel="apple-touch-icon" type="image/png" href="apple-touch-icon-180x180.png">
+    <link rel="icon" href="favicon.ico">
+  </head>
+
+
+  <body>
+
+    <!-- ヘッダー -->
+    <header class="header">
+      <div class="logo">
+        <a href="index.html">
+          <img src="image/logo.svg" alt="ロゴ">
+        </a>
+      </div>
+
+      <nav class="gnav">
+        <ul class="gnav__list">
+          <li class="gnav__item"><a class="gnav__link" href="index.html">ホーム</a></li>
+          <li class="gnav__item"><a class="gnav__link gnav__link--active" href="message.html">メッセージ</a></li>
+          <li class="gnav__item"><a class="gnav__link" href="company.html">会社概要</a></li>
+        </ul>
+      </nav>
+
+      <!-- ハンバーガーメニュー -->
+      <button class="hamburger" type="button" aria-label="メニューを開く" aria-controls="sp-menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="sp-menu" id="sp-menu" aria-hidden="true">
+
+        <button class="sp-menu__close" type="button" aria-label="メニューを閉じる">
+        </button>
+
+        <nav class="sp-menu__nav">
+          <ul class="sp-menu__list">
+            <li class="sp-menu__item"><a class="sp-menu__link" href="index.html">ホーム</a></li>
+            <li class="sp-menu__item"><a class="sp-menu__link" href="message.html">メッセージ</a></li>
+            <li class="sp-menu__item"><a class="sp-menu__link" href="company.html">会社概要</a></li>
+          </ul>
+        </nav>
+
+      </div>
+
+      <div class="sp-menu-overlay" aria-hidden="true"></div>
+
+    </header>
+    <!-- /ヘッダー -->
+
+
+    <main>
+
+      <!-- ページビジュアル -->
+      <section class="page-section">
+
+        <picture>
+          <source
+          media="(max-width: 768px)"
+          srcset="image/sp_header.png">
+          <img class="page-section__img" src="image/pc_header.png" alt="">
+        </picture>
+
+        <div class="page-section__copy">
+          <h1 class="page-section__title">メッセージ</h1>
+        </div>
+      </section>
+      <!-- /ページビジュアル -->
+
+      <!-- メッセージ -->
+      <section class="message">
+        <div class="message__inner">
+          <h2 class="message__title">
+            「仕事」をきっかけに<br>
+            人生の新しいスタートを！
+          </h2>
+          <p class="message__lead">大事なお仕事探しを応援させてください</p>
+
+          <div class="message__box">
+            <div class="message__photo">
+              <img src="image/ceo.png" alt="">
+            </div>
+            <p class="message__text">
+              はじめまして。代表取締役社長のショーン・デイビット・ジュニアです。<br>
+              私はそこそこ幸せです。それは仕事が楽しいからです。もちろん仕事イコール人生ではありません。でも仕事は人生の大事な基盤のように思っています。<br>
+              株式会社STARTは、みなさんが仕事をきっかけに理想の人生を実現する手助けをしています。幸せにつながるお仕事紹介サービス<a class="message__link" href="#">『スタート』</a>や、共通の目標を目指す仲間が見つかる人材紹介SNS<a class="message__link" href="#">『ゴール』</a>を運営しています。また、Webデザインの基礎スキルを身につけられるスクール<a class="message__link" href="#">『Webの学校』</a>も随時開講しています。
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="message-visual">
+        <div class="message__inner">
+          <img class="message-visual__img" src="image/office.png" alt="">
+        </div>
+      </section>
+    </main>
+
+    <!-- フッター -->
+    <footer class="footer" id="footer">
+
+      <div class="footer__inner">
+        <nav class="footer__nav">
+          <ul class="footer__nav__list">
+            <li class="footer__nav__item"><a href="index.html">ホーム</a></li>
+            <li class="footer__nav__item"><a href="message.html">メッセージ</a></li>
+            <li class="footer__nav__item"><a href="company.html">会社概要</a></li>
+          </ul>
+        </nav>
+
+        <div class="footer__copyright">&copy;START</div>
+      </div>
+    </footer>
+    <!-- /フッター -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+
+
+  </body>
